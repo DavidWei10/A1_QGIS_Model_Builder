@@ -1,0 +1,48 @@
+David Weiser
+Matrikelnummer: 4119665
+Wintersemester 2021
+Seminar FOSSGIS
+Dozentin: Christina Ludwig
+Fachsemester: 3
+Abgabetermin: 20.11.2020
+
+
+
+Assignment 1.1.: Automated GIS Analyses using the QGIS Model Builder
+
+1. Answer the following questions:
+
+1.1. What is the Topographic Wetness Index?
+
+Der topographische Feuchteindex (kurz TWI) ist ein Maß für die releifbedingte Bodenfeuchte und
+beschreibt das reliefbedingte Abflussverhalten. Er ist eine Funktion der Neigung und des Wassereinzugsgebietes.
+Die Formel lautet W = ln (a/tanß) (Purali et al. 2014, S.40, zitiert nach Beven und Kikby 1979).
+a repräsentiert in der Formel das aufsteigende Abflussgebiet diviert durch .
+Der Tangens von ß repräsentiert den Gradient des Oberflächengefälles.
+
+Durch Vereinfachungen in der Implementation des TWI, erreicht durch die simplen physikalisch-basierten Prinzipien
+und der Verringerung der Wichtigkeit von Benutzereingaben, repräsentiert der TWI einen konsistente
+und zuverlässige Herangehensweise für die Parameterisierung von Wasserbewewgungen (Purali et al. 2014, S.40, zitiert nach Hjerdt et al. 2004).
+
+So wird der TWI sowohl für die Modellierung von hydrologischen Prozessen, biologischen Prozessen, Vegetationsmustern als auch
+bei Studien in Wäldern regelmäßig verwendet (Purali et al. 2014, S.40, zitiert nach Sörensen et al. 2006).
+
+1.2. How are the TWI values related to the flood probability?
+
+Die Überflutungswahrscheinlichkeit steigt mit zunehmenden TWI-Wert.
+
+
+2. Search for FOSS GIS tools co calculate the TWI.
+
+Bei GRASS GIS Tools können drei Tools "r.topidx" , "r.watershed" sowohl "r.terraflow" benutzt werden,
+die den TWI direkt berechnen. (vgl. Mattivi et al. 2019, S.5. Abb.4). 
+Mit Whitebox GAT Tools, ein plattformübergreifendes Open-Source Geoinformationssystem in den Programmiersprachen
+Java und Python, können die zwei Tools "Slope" und "SCA" (allerdings mit vielen Zwischenschritten)
+den TWI berechnen.
+Bei SAGA GIS können unter dem Abschnitt "Terrain Analysis - Hydrology" die Tools "Topographic wetness index (twi)"
+in einem oder mehreren Schritten sowohl der "Saga wetness index" verwendet werden (vgl. Mattivi et al. 2019, S.5. Abb.4). 
+
+
+
+
+
