@@ -1,3 +1,0 @@
-AUfgabe 1
-
-CMD ist die Lösung.
