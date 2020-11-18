@@ -17,8 +17,8 @@ Assignment 1.1.: Automated GIS Analyses using the QGIS Model Builder
 Der topographische Feuchteindex (kurz TWI) ist ein Maß für die releifbedingte Bodenfeuchte und
 beschreibt das reliefbedingte Abflussverhalten. Er ist eine Funktion der Neigung und des Wassereinzugsgebietes.
 Die Formel lautet W = ln (a/tanß) (Purali et al. 2014, S.40, zitiert nach Beven und Kikby 1979).
-a repräsentiert in der Formel das aufsteigende Abflussgebiet diviert durch .
-Der Tangens von ß repräsentiert den Gradient des Oberflächengefälles.
+a repräsentiert in der Formel das aufsteigende Abflussgebiet diviert durch
+den Tangens von ß, der den Gradient des Oberflächengefälles repräsentiert. W ist der TWI.
 
 Durch Vereinfachungen in der Implementation des TWI, erreicht durch die simplen physikalisch-basierten Prinzipien
 und der Verringerung der Wichtigkeit von Benutzereingaben, repräsentiert der TWI einen konsistente
